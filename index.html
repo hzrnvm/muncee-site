@@ -7,104 +7,40 @@
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
   </head>
   <body>
-    <div id="nav-bar"></div>
-    <img id="headshot" src="./headshot.jpg">
-    <div id="caption">
-      <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu tempus nisl, at convallis neque. Nullam eget lorem vel nisi dapibus consequat. Mauris ut convallis diam, nec bibendum risus. Donec eleifend eget enim nec dapibus. Praesent mi leo, dapibus non risus eu, tempus accumsan libero.</h2>
-    </div>
-    <div id="splashDiv">
-      <h2 id="splash" onclick="splash()"></h2>
-      <script>
-        // define list of splashes
-        var splashes = [
-          "REPISSERCLE",
-          "and they don't stop coming",
-          "Me? I've never articulated anything. I'm completely incoherent.",
-          "so much to do so much to see",
-          "error retrieving splash text",
-          "oatenery",
-          "if you are what you eat i guess that makes me what i eat.",
-          "the pokemon were created as an ensemble.<br>to pick a favorite would be to disrespect the ensemble",
-          "Muncee Quotes 2022 Free Download",
-          "Object AFFECTS object, instantly gains attribute 'regrets it'!",
-          "splash no longer WIP it is now splash WOOP",
-          "boss said i had to add more splashes. PRANK'D!",
-          "Imagine if antagonists lacked any evil scheme",
-          "\"Listen to your heart!\" \"No!\"",
-          "The jerk store called, they're runnin' outta you!",
-          "I love refrigerators!",
-          "Best friends gotta eat!",
-          "Well I can play the tuba, and they all just shake their heads",
-          "Disconnect the dots and be on your way",
-          "Life is long like a CVS recipt",
-          "Well, it turns out the whole world will collapse,<br>but that's the result of a costly mistake.",
-          "Sometimes I wonder if a single good thing exists on Earth,<br>and then I eat Cinnamon Toast Crunch.",
-          "table universe universe",
-          "i actually do have a favorite pokemon",
-          "clown.txt",
-          "There was a time, before we were born,<br>if someone asks, this is where i'll be",
-          "Karkalicious definition, makes Terezi loco",
-          "I don't want the world, I just want your half",
-          "Restraunt is named Greg",
-          "Yeah and juice then the bacon!",
-          "awww the scrunkly!! double tap now if you'd scrunkly the when.",
-          "the secret code is muncee's favorite album",
-          "the NON-secret code isN'T NOT-muncee's LEAST favorite album",
-          "Only a plonker would call time on a sozzled bonking",
-          "Show me a good mouser and I'll show you a cat with bad breath.",
-          "All errors in this website are my own",
-          "You are not the guy. You are not capable of being the guy.<br>I had a guy, but now I don't. You are not the guy.",
-          "Nobody's perfect, I really think you do! - Smash Mouth, 1997",
-          "I'm a man of respect and I prefer to be addressed as padrino.",
-          "Vengabus is a manifesto too",
-          "You're not your thoughts, you're not your brain<br> you're just the character you've made",
-          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-          "man dont put me on speaker crab",
-          "􀀺􀀩",
-          "󿯼",
-          "Ｗｉｄｅ Ｓｐｌａｓｈ！！！",
-          "Why do they call it oven when you of in the cold food<br>of out hot eat the food?",
-          "Has Anyone Really Been Far Even as Decided to Use<br>Even Go Want to do Look More Like?",
-          "I Hate Sauerkraut!",
-          "why would i say jan or 󱤑 when i could say ",
-          "HEY EVERY       !",
-          "And the heat goes on where the hand has been<br>And the heat goes on and the heat goes on",
-          "I might be a saint worth steeples, I might be the brain of evil<br>bad things happen to good people, good things happen to me",
-          "This is not enough, not enough, to prove it yet<br>No, I need to hit the bottom",
-          "spdf! gcat! chon!",
-          "reminder to make a character named aufbau in a story<br>this splash is here so i can remember later",
-          "I'm just an animal looking for a home,<br>and share the same space for a minute or two",
-          "And you love me 'til my heart stops love me 'til i'm dead!",
-          "And you may find yourself living in a shotgun shack<br>and you may find yourself in another part of the world",
-          "And you may find yourself behind the wheel of a large automobile",
-          "And you may ask yourself, \"Well, how did I get here?\"",
-          "Letting the days go by, let the water hold me down",
-          "Once in a lifetime, water flowing underground",
-          "Same as it ever was, same as it ever was",
-          "Well, we know where we're going<br>But we don't know where we've been",
-          "Hey like a surgeon, cuttin' for the very first time!",
-          "DELTA ECHO ALPHA DELTA",
-          "You earned this, new purpose, lifetime achievement award...",
-          "You slammed my face down on the barbeque grill<br>now my scars are healing but my heart never will",
-          "Oh, you know this really isn't like you at all,<br>you never acted this way before",
-          "GEORGE IS GETTING UPSET!",
-          "I always forget why I regret it, man I love being drunk.",
-          "I am yelling \"Someone's in here\" from the bathroom stall of life"
-        ];
-      
-        // get the new splash!
-        function splash(seed) {
-          console.log(splashes.length);
-          if (typeof(seed) == 'undefined') {
-            var seed = Math.floor(Math.random() * splashes.length)
-          } else {seed = seed--};
-          var newSplash = splashes[seed];
-          console.log("the seed " + seed + " corresponds to the splash \"" + newSplash + "\"");
-          while (newSplash == document.getElementById("splash").innerHTML) {var newSplash = splashes[Math.floor(Math.random())];}
-          document.getElementById("splash").innerHTML = newSplash;
-        }
-        splash()
-      </script>
-    </div>
+    <header>
+      <nav style="background-color: #070;">
+        <a href="/" class="home">Home</a>
+        <div class="menu">
+          <a href="/#about">About Me</a>
+          <a href="/#projects">Projects</a>
+          <a href="/#blog">Blog</a>
+          <a href="/#contact">Contact</a>
+        </div>  
+      </nav>
+    </header>
+    <main>
+      <section id="about">
+        <figure>
+          <img id="headshot" src="./headshot.jpg" alt="Headshot of Adam Jabri">
+        </figure>
+        <div id="caption">
+          <h2 style="padding-bottom: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+          <p class="large">Pellentesque eu tempus nisl, at convallis neque. Nullam eget lorem vel nisi dapibus consequat. Mauris ut convallis diam, nec bibendum risus.</p>
+          <a href="/about.html" class="outline button"><button>More About Me</button></a>
+        </div>
+      </section>
+      <section id="projects">
+      </section>
+      <section id="blog">
+      </section>
+      <section id="contact">
+      </section>
+    </main>
+    <footer style="background-color: #070;">
+      <div style="position: absolute; left: 33%; transform: translateX(-50%);">
+        <h2>Location</h2>
+        <p>Atlanta, GA</p>
+      </div>
+    </footer>
   </body>
 </html>
