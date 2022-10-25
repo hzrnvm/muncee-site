@@ -73,11 +73,14 @@ figure {
     width: 75%;
     float: right;
     text-align: center;
-    font-size: 1.25em;
 }
 
 #caption h2 {
     font-size: 2.5em;
+}
+
+#caption p {
+    font-size: 1.25em;
 }
 
 #caption button {
