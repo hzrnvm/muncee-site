@@ -1,6 +1,7 @@
 body {
     font-family: Arial;
     word-break: break-word;
+    color: white;
 }
 
 * {
@@ -44,11 +45,6 @@ nav .menu {
     -webkit-transform: translateY(-50%);
 }
 
-#about {
-    background: #007fff;
-    color: white;
-}
-
 .flex {
     display: flex;
     margin-left: -0.6em;
@@ -60,8 +56,11 @@ nav .menu {
 .flex > * {
     box-sizing: border-box;
     flex: 1 1 auto;
-    padding-left: 0.6em;
-    padding-bottom: 0.6em;
+}
+
+#about {
+    background: #007fff;
+    color: white;
 }
 
 figure {
@@ -76,14 +75,21 @@ figure {
     float: right;
 }
 
-.large {font-size: 1.25em;}
+#caption h2 {
+    font-size: 2.5em;
+}
 
-button {
+#caption p {
+    font-size: 1.25em;
+}
+
+#caption button {
     display: inline-block;
     text-align: center;
     margin: 0;
     padding: 0.3em 0.9em;
     vertical-align: middle;
+    border: 1px solid white;
     border-radius: 0.2em;
     width: auto;
     user-select: none;
@@ -92,7 +98,7 @@ button {
  
 button:hover {
     background-color: white;
-    color: transparent;
+    color: #007fff;
 }
 
 footer {
