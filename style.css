@@ -84,7 +84,11 @@ figure {
 }
 
 #caption button {
+    display: inline-block;
+    text-align: center;
+    margin: 0;
     padding: 0.3em 0.9em;
+    vertical-align: middle;
     border: 2px solid white;
     border-radius: 0.2em;
     width: auto;
