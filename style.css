@@ -1,5 +1,5 @@
 body {
-    font-style: Arial;
+    font-family: Arial;
     word-break: break-word;
 }
 
@@ -12,6 +12,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
+    color: inherit;
     text-decoration: none;
 }
 
@@ -70,4 +71,12 @@ button {
 button:hover {
     background-color: white;
     color: transparent;
+}
+
+footer {
+    background-color: #070;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    z-index: 2;
 }
