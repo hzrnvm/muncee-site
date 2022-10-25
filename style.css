@@ -83,7 +83,7 @@ figure {
     font-size: 1.25em;
 }
 
-#caption > button {
+#caption button {
     padding: 0.3em 0.9em;
     border: 1px solid white;
     border-radius: 0.2em;
@@ -92,7 +92,7 @@ figure {
     background-color: transparent;
 }
  
-#caption > button:hover {
+#caption button:hover {
     background-color: white;
     color: #007fff;
 }
