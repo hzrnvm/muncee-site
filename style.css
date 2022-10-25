@@ -2,6 +2,7 @@ body {
     font-family: Arial;
     word-break: break-word;
     color: white;
+    margin: 0;
 }
 
 * {
@@ -59,10 +60,7 @@ nav .menu {
     padding-left: 0.6em;
 }
 
-#about {
-    background: #007fff;
-    color: white;
-}
+#about > article {background: #007fff;}
 
 figure {
     width: 25%;
