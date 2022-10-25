@@ -74,6 +74,7 @@ figure {
 #caption {
     width: 75%;
     float: right;
+    text-align: center;
 }
 
 #caption h2 {
