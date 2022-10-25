@@ -114,11 +114,12 @@ figure {
 footer {
     background-color: #070;
     position: absolute;
+    left: 50%;
     bottom: 0;
-    width: 100vw;
-    border-radius: 2vw 2vw 0 0;
-    padding-top: 15px;
-    padding-bottom: 7.5px;
+    transform: translateX(-50%);
+    width: 50vw;
+    border-radius: 5vw 5vw 0 0;
+    padding: 15px 0;
     z-index: 2;
     text-align: center;
 }

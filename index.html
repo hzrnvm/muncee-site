@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>muncee's reef</title>
+    <title>Adam Jabri</title>
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
   </head>
   <body>
     <header>
@@ -23,7 +24,7 @@
         </figure>
         <section id="caption">
           <h2 style="padding-bottom: 0;">Hey, I'm Adam Jabri.</h2>
-          <p class="large">I'm a high school student and an amateur web developer and wordsmith.</p>
+          <p class="large">I'm a high school student, amateur web developer, and wordsmith.</p>
           <a href="/about.html"><button>More About Me</button></a>
         </section>
       </section>
@@ -32,13 +33,25 @@
       <section id="blog">
       </section>
       <section id="contact">
+        <form>
+          <label for="name">Name:</label>
+          <input placeholder="Name" id="name" name="name">
+          <button>Anonymous</button>
+          <input type="submit">
+        </form>
       </section>
     </main>
     <footer>
       <section>
-        <h2>Location</h2>
-        <p>Atlanta, GA</p>
+        <h2>This website made by Adam Jabri.</h2>
+        <p>Contact me using the form or at adamajabri@gmail.com for requests</p>
       </section>
     </footer>
+    <script>
+      function func() {
+          if ($("#mname").required) $("#mname").required = false
+          else $("#mname").required = true
+        }
+    </script>
   </body>
 </html>
