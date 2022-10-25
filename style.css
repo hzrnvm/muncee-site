@@ -50,7 +50,7 @@ nav {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    transition: all .3s ease;
+    /*transition: all .3s ease;*/
 }
 
 .flex > * {
@@ -90,7 +90,7 @@ figure {
     width: auto;
     user-select: none;
     background-color: #007fff;
-    transition: all .4s ease;
+    transition-duration: .4s;
 }
  
 #caption button:hover {
