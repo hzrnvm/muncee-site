@@ -19,7 +19,8 @@ a {
 }
 
 header {
-    border-bottom: 2px solid #7f7f7f;
+    background-color: #2533a2;
+    border-bottom: 2px solid #515997;
     flex: content;
     top: 0;
     left: 0;
@@ -30,12 +31,12 @@ header {
 }
 
 .home {
-    font-weight: 700;
     float: left;
-    padding: 0 0.6em;
-    max-width: 50%;
-    white-space: nowrap;
-    color: inherit;
+    position: relative;
+    font-size: 2em;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
 }
 
 nav {
