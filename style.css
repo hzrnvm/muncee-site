@@ -25,7 +25,7 @@ header {
     left: 0;
     right: 0;
     height: 3em;
-    padding: 0 0.6em;
+    padding: 0 1vw;
     z-index: 10000;
 }
 
