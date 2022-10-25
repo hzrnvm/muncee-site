@@ -48,8 +48,7 @@ nav {
 
 .flex {
     display: flex;
-    margin-left: -0.6em;
-    width: calc(100% + 0.6em);
+    width: 100%;
     flex-wrap: wrap;
     transition: all .3s ease;
 }
@@ -57,7 +56,6 @@ nav {
 .flex > * {
     box-sizing: border-box;
     flex: 1 1 auto;
-    padding-left: 0.6em;
 }
 
 #about > article {background: #007fff;}
