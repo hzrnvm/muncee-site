@@ -46,21 +46,9 @@ nav {
     -webkit-transform: translateY(-50%);
 }
 
-nav a {
-    margin: 0 1vw;
-}
+nav a {margin: 0 1vw;}
 
-.flex {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    /*transition: all .3s ease;*/
-}
-
-.flex > * {
-    box-sizing: border-box;
-    flex: 1 1 auto;
-}
+main > section {width: 100%;}
 
 #about {
     background: #007fff;
@@ -68,10 +56,8 @@ nav a {
 }
 
 figure {
-    width: 25%;
     margin: 0;
     line-height: 0;
-    float: left;
 }
 
 #caption {
@@ -84,17 +70,11 @@ figure {
     -webkit-transform: translateY(-50%);
 }
 
-#caption h2 {
-    font-size: 2.5em;
-}
-
-#caption p {
+#caption * {
     font-size: 1.25em;
-    margin: 20px 0;
 }
 
 #caption button {
-    font-size: 1.25em;
     padding: 0.3em 0.9em;
     vertical-align: middle;
     border: 2px solid white;
@@ -111,12 +91,18 @@ figure {
     cursor: pointer;
 }
 
+#contact {
+    background: #ff007f;
+    position: absolute;
+}
+
 footer {
     background-color: #070;
     position: absolute;
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
     width: 50vw;
     border-radius: 5vw 5vw 0 0;
     padding: 15px 0;
