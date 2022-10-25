@@ -46,6 +46,10 @@ nav {
     -webkit-transform: translateY(-50%);
 }
 
+nav a {
+    margin: 0 1vw;
+}
+
 .flex {
     display: flex;
     width: 100%;
