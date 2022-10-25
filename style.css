@@ -18,7 +18,7 @@ a {
     text-decoration: none;
 }
 
-nav {
+header {
     border-bottom: 2px solid #7f7f7f;
     flex: content;
     top: 0;
@@ -29,7 +29,7 @@ nav {
     z-index: 10000;
 }
 
-nav .home {
+.home {
     font-weight: 700;
     float: left;
     padding: 0 0.6em;
@@ -38,7 +38,7 @@ nav .home {
     color: inherit;
 }
 
-nav .menu {
+nav {
     float: right;
     position: relative;
     top: 50%;
