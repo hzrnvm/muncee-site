@@ -19,7 +19,7 @@ a {
 }
 
 header {
-    background-color: #2533a2;
+    background-color: #2533a230;
     flex: content;
     top: 0;
     left: 0;
@@ -91,10 +91,17 @@ figure {
     cursor: pointer;
 }
 
+#projects {
+    background: #ff0;
+    height: 101px;
+    position: absolute;
+    top: calc(202px + 3em);
+}
+
 #contact {
     background: #ff007f;
     position: absolute;
-    top: calc(202px + 3em);
+    top: calc(303px + 3em);
 }
 
 form *:not(h2) {
