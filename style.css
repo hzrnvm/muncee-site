@@ -94,6 +94,11 @@ figure {
 #contact {
     background: #ff007f;
     position: absolute;
+    top: calc(202px + 3em);
+}
+
+form *:not(h2) {
+    color: black;
 }
 
 footer {
