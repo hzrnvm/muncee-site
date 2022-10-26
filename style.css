@@ -37,6 +37,7 @@ header {
     top: 50%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
 }
 
 nav {
@@ -45,6 +46,7 @@ nav {
     top: 50%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
 }
 
 nav a {margin: 0 1vw;}
@@ -69,6 +71,7 @@ figure {
     right: 0;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
 }
 
 #caption * {
@@ -99,6 +102,21 @@ figure {
     top: calc(202px + 3em);
 }
 
+#projects article {
+    display: inline-block;
+    border-radius: 4px;
+    border: 1px solid grey;
+    width: 240px;
+    height: 180px;
+    background-color: transparent;
+    color: inherit;
+    overflow: hidden;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
 #contact {
     background: #ff007f;
     position: absolute;
@@ -116,6 +134,7 @@ footer {
     bottom: 0;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
     width: 50vw;
     border-radius: 5vw 5vw 0 0;
     padding: 15px 0;
