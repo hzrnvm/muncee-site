@@ -127,7 +127,7 @@ form *:not(h2) {
     color: black;
 }
 
-footer {
+body > footer {
     background-color: #070;
     position: absolute;
     left: 50%;
