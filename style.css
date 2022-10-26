@@ -19,7 +19,8 @@ a {
 }
 
 header {
-    background-color: #2533a230;
+    /*background-color: #2533a230;*/
+    background-color: #fff4;
     flex: content;
     top: 0;
     left: 0;
@@ -93,7 +94,7 @@ figure {
 
 #projects {
     background: #ff0;
-    height: 101px;
+    height: 200px;
     position: absolute;
     top: calc(202px + 3em);
 }
@@ -101,7 +102,7 @@ figure {
 #contact {
     background: #ff007f;
     position: absolute;
-    top: calc(303px + 3em);
+    top: calc(402px + 3em);
 }
 
 form *:not(h2) {
