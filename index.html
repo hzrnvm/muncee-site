@@ -7,7 +7,7 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
-    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   </head>
   <body>
     <header>
@@ -43,12 +43,12 @@
       <section id="blog">
       </section>
       <section id="contact">
-        <form>
+        <form method="POST">
           <label for="name"><h2>Name:</h2></label>
           <input placeholder="Name" id="name" name="name">
           <button type="button" onclick="func()">Anonymous</button><br>
           <label for="msg"><h2>Message:</h2></label>
-          <input placeholder="Message" id="msg" name="msg">
+          <input placeholder="Message" id="msg" name="msg"><br>
           <input type="submit">
         </form>
       </section>

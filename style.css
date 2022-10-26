@@ -86,7 +86,7 @@ figure {
     height: 200px;
     position: absolute;
     top: calc(202px + 3em);
-    background: #ff0;
+    padding: 0 1vw;
 }
 
 #projects > article {
@@ -95,7 +95,7 @@ figure {
     position: absolute;
     bottom: 50%;
     transform: translateY(50%);
-    background-color: transparent;
+    background-color: #eee;
     color: inherit;
     border: 1px solid grey;
     border-radius: 4px;
@@ -126,7 +126,7 @@ figure {
 }
 
 #projects h3 {
-    width: auto;
+    width: fit-content;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -142,6 +142,10 @@ figure {
 
 form *:not(h2) {
     color: black;
+}
+
+label {
+    display: inline-block;
 }
 
 body > footer {
