@@ -31,6 +31,7 @@
         </section>
       </section>
       <section id="projects">
+        <header><h2>Projects</h2></header>
         <article id="celladventure">
           <a href="/projects/cellAdventure.html">
             <img src="/images/cellAdventure.png" alt="Cell Adventure Thumbnail">
@@ -48,7 +49,7 @@
           <input placeholder="Name" id="name" name="name">
           <button type="button" onclick="func()">Anonymous</button><br>
           <label for="msg"><h2>Message:</h2></label>
-          <input placeholder="Message" id="msg" name="msg"><br>
+          <textarea rows="5" placeholder="Message" id="msg" name="msg" required data-validation-required-message="Please enter a message."></textarea><br>
           <input type="submit">
         </form>
       </section>
