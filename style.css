@@ -16,6 +16,21 @@ a {
     text-decoration: none;
 }
 
+button {
+    background-color: #00ff7f;
+    color: white;
+    opacity: 0.6;
+    border: 2px solid white;
+    border-radius: 0.2em;
+    user-select: none;
+    transition-duration: .4s;
+}
+
+button:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
 body > header {
     height: 3em;
     background-color: #2533a280;
@@ -153,6 +168,24 @@ figure {
     width: 95%;
     max-width: 1000px;
     margin: 0 auto;
+    padding: 1vh 0;
+}
+
+form > * {
+    display: block;
+    margin-bottom: 1vh;
+}
+
+input[placeholder=Name] {
+    height: 4vh;
+}
+
+input[placeholder=Name]:focus, textarea:focus {
+    border-color: #402ecc;
+}
+
+form *:not(h2) {
+    color: black;
 }
 
 textarea {
@@ -167,16 +200,8 @@ textarea {
     resize: none;
 }
 
-input[type=text]:focus, textarea:focus {
-    background-color: lightblue;
-}
-
-form *:not(h2) {
-    color: black;
-}
-
-label {
-    display: inline-block;
+input[type=submit] {
+    margin: 0 auto;
 }
 
 body > footer {
