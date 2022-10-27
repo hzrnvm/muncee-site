@@ -74,6 +74,7 @@ button {
     color: black;
     border: 1px solid black;
     border-radius: 0.2em;
+    font-family: 'Roboto Mono', 'Courier New';
     line-height: normal;
     user-select: none;
     transition-duration: .4s;
