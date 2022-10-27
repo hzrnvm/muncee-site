@@ -67,16 +67,16 @@
     </footer>
     <script>
       function func() {
-          if ($("#mname").prop('required')) {
-            console.log("entering anonymous mode.")
-            $("#mname").removeProp('required');
-            $("#mname").prop('disabled', true);
+          if ($("#name").prop('required')) {
+            console.log("entering anonymous mode.");
+            $("#name").removeProp('required');
+            $("#name").prop('disabled', true);
             $("form button").text("Exit Anonymous Mode");
           }
           else {
-            console.log("exiting anonymous mode.")
-            $("#mname").prop('required', true);
-            $("#mname").prop('disabled', false);
+            console.log("exiting anonymous mode.");
+            $("#name").prop('required', true);
+            $("#name").prop('disabled', false);
             $("form button").text("Anonymous");
           }
         }
