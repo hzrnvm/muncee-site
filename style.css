@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto Mono', 'Courier New';
+    font-family: 'Roboto Mono';
     word-break: break-word;
     margin: 0;
 }
@@ -65,16 +65,14 @@ figure {
     text-align: center;
 }
 
-#caption * {
-    font-size: 1.25em;
-}
+#caption * {font-size: 1.25em;}
 
 button {
     background-color: #00ff7f99;
     color: black;
     border: 1px solid black;
     border-radius: 0.2em;
-    font-family: 'Roboto Mono', 'Courier New';
+    font-family: 'Roboto Mono';
     line-height: normal;
     user-select: none;
     transition-duration: .4s;
@@ -85,35 +83,26 @@ button:hover {
     cursor: pointer;
 }
 
-#caption button {
-    width: auto;
-    border: 2px solid white;
-    border-radius: 0.2em;
-    padding: 0.3em 0.9em;
-    vertical-align: middle;
-    user-select: none;
-    transition-duration: .4s;
-}
+#caption button {padding: 0.3em 0.9em;}
 
 #projects {
-    height: 200px;
+    height: calc(200px + 4vh);
     position: absolute;
     top: calc(202px + 3em);
-    padding: 0 1vw;
+    padding: 4vh 1vw 0;
     background: #ff08;
 }
+
+#projects > header {margin-top: -4vh;}
 
 #projects > article {
     width: 240px;
     height: 180px;
     position: absolute;
-    bottom: 50%;
-    transform: translateY(50%);
+    top: 4vh;
     background-color: #eee;
-    color: inherit;
     border: 1px solid grey;
     border-radius: 4px;
-    overflow: hidden;
     cursor: pointer;
     user-select: none;
 }
@@ -149,7 +138,7 @@ button:hover {
 
 #contact {
     position: absolute;
-    top: calc(402px + 3em);
+    top: calc(402px + 4vh + 3em);
     background: #f088;
 }
 
@@ -165,7 +154,7 @@ form > * {
     margin-bottom: 1vh;
 }
 
-input[placeholder=Name] {height: 4vh;}
+label[aria-label=Name] > * {height: 4vh;}
 
 input[placeholder=Name]:focus, textarea:focus {border-color: #402ecc;}
 
