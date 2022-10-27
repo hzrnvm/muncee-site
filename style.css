@@ -23,13 +23,9 @@ body > header {
     z-index: 10000;
 }
 
-header {
-    text-align: center;
-}
+header {text-align: center;}
 
-section > header > h2 {
-    color: black;
-}
+section > header > h2 {color: black;}
 
 .home {
     position: relative;
@@ -74,34 +70,28 @@ figure {
 }
 
 button {
-    background-color: #00ff7f;
+    background-color: #00ff7f99;
     color: black;
-    opacity: 0.6;
+    border: 1px solid black;
     border-radius: 0.2em;
+    line-height: normal;
     user-select: none;
     transition-duration: .4s;
 }
 
 button:hover {
-    opacity: 1;
+    background-color: #00ff7f;
     cursor: pointer;
 }
 
 #caption button {
     width: auto;
-    background-color: #007fff;
-    opacity: 0.6;
     border: 2px solid white;
     border-radius: 0.2em;
     padding: 0.3em 0.9em;
     vertical-align: middle;
     user-select: none;
     transition-duration: .4s;
-}
- 
-#caption button:hover {
-    opacity: 1;
-    cursor: pointer;
 }
 
 #projects {
@@ -126,7 +116,6 @@ button:hover {
     cursor: pointer;
     user-select: none;
 }
-
 
 #projects a {
     position: absolute;
@@ -175,13 +164,9 @@ form > * {
     margin-bottom: 1vh;
 }
 
-input[placeholder=Name] {
-    height: 4vh;
-}
+input[placeholder=Name] {height: 4vh;}
 
-input[placeholder=Name]:focus, textarea:focus {
-    border-color: #402ecc;
-}
+input[placeholder=Name]:focus, textarea:focus {border-color: #402ecc;}
 
 form * {
     color: black;
