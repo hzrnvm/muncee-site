@@ -138,7 +138,7 @@ button:hover {
 
 #contact {
     position: absolute;
-    top: calc(402px + 4vh + 3em);
+    top: calc(402px + 8vh + 3em);
     background: #f088;
 }
 
