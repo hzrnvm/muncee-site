@@ -44,14 +44,18 @@
       <section id="blog">
       </section>
       <section id="contact">
-        <form method="POST">
-          <label for="name"><h2>Name:</h2></label>
-          <input placeholder="Name" id="name" name="name">
-          <button type="button" onclick="func()">Anonymous</button><br>
-          <label for="msg"><h2>Message:</h2></label>
-          <textarea rows="5" placeholder="Message" id="msg" name="msg" required data-validation-required-message="Please enter a message."></textarea><br>
-          <input type="submit">
-        </form>
+        <article>
+          <form method="POST">
+            <label aria-label="Name">
+              <input placeholder="Name" id="name" name="name">
+              <button type="button" onclick="func()">Anonymous</button><br>
+            </label>
+            <label aria-label="Message">
+              <textarea rows="5" placeholder="Message" id="msg" name="msg" required data-validation-required-message="Please enter a message."></textarea><br>
+            </label>
+            <input type="submit">
+          </form>
+        </article>
       </section>
     </main>
     <footer>
@@ -62,8 +66,13 @@
     </footer>
     <script>
       function func() {
-          if ($("#mname").required) $("#mname").required = false
-          else $("#mname").required = true
+          if ($("#mname").required) {
+            $("#mname").required = false
+            $("form > button").textContent
+          }
+          else {
+            $("#mname").required = true
+          }
         }
     </script>
   </body>

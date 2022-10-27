@@ -149,10 +149,16 @@ figure {
     background: #f088;
 }
 
+#contact article {
+    width: 95%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 textarea {
     overflow: auto;
     width: 100%;
-    height: 150px;
+    height: auto;
     padding: 12px 20px;
     box-sizing: border-box;
     border: 2px solid #ccc;
