@@ -67,7 +67,7 @@
     </footer>
     <script>
       function func() {
-          if ($("#name").prop('required')) {
+          if ($("#name").prop('required') == true) {
             console.log("entering anonymous mode.");
             $("#name").removeProp('required');
             $("#name").prop('disabled', true);
