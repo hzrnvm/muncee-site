@@ -69,7 +69,7 @@
       function func() {
           if ($("#name").prop('required') == true) {
             console.log("entering anonymous mode.");
-            $("#name").removeProp('required');
+            $("#name").prop('required', false);
             $("#name").prop('disabled', true);
             $("form button").text("Exit Anonymous Mode");
           }
