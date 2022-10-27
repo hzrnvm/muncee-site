@@ -68,11 +68,16 @@
     <script>
       function func() {
           if ($("#mname").required) {
-            $("#mname").required = false
-            $("form > button").textContent
+            console.log("entering anonymous mode.")
+            $("#mname").required = false;
+            $("#mname").disabled = true;
+            $("form button").text("Exit Anonymous Mode");
           }
           else {
-            $("#mname").required = true
+            console.log("exiting anonymous mode.")
+            $("#mname").required = true;
+            $("#mname").disabled = false;
+            $("form button").text("Anonymous");
           }
         }
     </script>
