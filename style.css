@@ -89,7 +89,7 @@ button:hover {
     height: calc(200px + 4vh);
     position: absolute;
     top: calc(202px + 3em);
-    padding: 4vh 1vw 0;
+    padding: 4vh 4vw 0;
     background: #ff08;
 }
 
@@ -165,12 +165,8 @@ form * {
 textarea {
     overflow: auto;
     width: 100%;
-    height: auto;
     padding: 12px 20px;
     box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
     resize: none;
 }
 
