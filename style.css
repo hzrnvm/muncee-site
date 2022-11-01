@@ -86,7 +86,7 @@ button:hover {
 #caption button {padding: 0.3em 0.9em;}
 
 #projects {
-    height: calc(200px + 4vh);
+    height: 200px;
     position: absolute;
     top: calc(202px + 3em);
     padding: 4vh 4vw 0;
@@ -94,6 +94,11 @@ button:hover {
 }
 
 #projects > header {margin-top: -4vh;}
+
+#projects > #thumb {
+    width: calc(960px + 12vw);
+    margin: auto;
+}
 
 #projects > article {
     width: 240px;
@@ -143,7 +148,7 @@ article#more {margin-left: calc(720px + 12vw);}
 
 #contact {
     position: absolute;
-    top: calc(402px + 8vh + 3em);
+    top: calc(402px + 4vh + 3em);
     background: #f088;
 }
 
