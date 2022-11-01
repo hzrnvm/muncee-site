@@ -89,7 +89,7 @@ button:hover {
     height: 200px;
     position: absolute;
     top: calc(202px + 3em);
-    padding: 4vh 4vw 0;
+    padding: 4vh 0 0;
     background: #ff08;
 }
 
