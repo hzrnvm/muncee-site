@@ -187,6 +187,7 @@ input[type=submit] {
 
 body > footer {
     width: 50vw;
+    min-width: calc(40ch * 1.2);
     position: absolute;
     left: 50%;
     bottom: 0;
@@ -196,4 +197,10 @@ body > footer {
     padding: 15px 0;
     z-index: 2;
     text-align: center;
+}
+
+footer p {font-size: 1.2em;}
+
+@media only screen and (max-width: calc(40ch * 1.2)) {
+    footer p:last-child {display: none;}
 }
