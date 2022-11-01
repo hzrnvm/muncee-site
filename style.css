@@ -124,6 +124,7 @@ button:hover {
     position: absolute;
     bottom: 0;
     background: white;
+    border-top: #eee 1px solid;
     text-align: center;
 }
 
@@ -137,9 +138,7 @@ button:hover {
 }
 
 article#mathcode {margin-left: calc(240px + 4vw);}
-
 article#passgen {margin-left: calc(480px + 8vw);}
-
 article#more {margin-left: calc(720px + 12vw);}
 
 #contact {
