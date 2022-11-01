@@ -100,7 +100,7 @@ button:hover {
     margin: auto;
 }
 
-#projects > article {
+#projects article {
     width: 240px;
     height: 180px;
     position: absolute;
