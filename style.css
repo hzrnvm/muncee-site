@@ -144,7 +144,7 @@ button:hover {
 
 article#mathcode {margin-left: calc(240px + 4vw);}
 article#passgen {margin-left: calc(480px + 8vw);}
-article#more {margin-left: calc(720px + 12vw);}
+article#more {margin-left: calc(720px + 12vw); cursor: default;}
 
 #contact {
     position: absolute;
