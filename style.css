@@ -136,6 +136,10 @@ button:hover {
     color: black;
 }
 
+article#mathcode {margin-left: calc(240px + 8vw);}
+
+article#passphrase {margin-left: calc(480px + 12vw);}
+
 #contact {
     position: absolute;
     top: calc(402px + 8vh + 3em);
