@@ -1,3 +1,4 @@
+<?php
 if (isset($_POST['name'])) {$name = $_POST["name"];}
 $msg = $_POST["msg"];
 
@@ -23,3 +24,4 @@ else {
 
     mail("adamajabri@gmail.com", "Anonymous Site Message", $iable);
 }
+?>
