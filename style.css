@@ -95,7 +95,7 @@ button:hover {
 
 #projects > header {margin-top: -4vh;}
 
-#projects > #thumb {
+#projects > #thumbs {
     width: calc(960px + 12vw);
     margin: auto;
 }
