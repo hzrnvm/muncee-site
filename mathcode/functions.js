@@ -1,4 +1,4 @@
-prime = n => {
+var prime = n => {
     if (n < 2) return false
     else if (n == 2 || n == 3) return true
 
@@ -12,37 +12,37 @@ prime = n => {
     }
 }
 
-trian = n => n < 0 ? false : !!Number.isInteger(Math.sqrt(2*n + 1/4) - 1/2);
+var trian = n => n < 0 ? false : !!Number.isInteger(Math.sqrt(2*n + 1/4) - 1/2);
 
-square = n => n < 0 ? false : !!(Math.floor(Math.sqrt(n)) == Math.sqrt(n));
+var square = n => n < 0 ? false : !!(Math.floor(Math.sqrt(n)) == Math.sqrt(n));
 
-cube = n => !(Math.floor(Math.cbrt(n)) == Math.cbrt(n));
+var cube = n => !(Math.floor(Math.cbrt(n)) == Math.cbrt(n));
 
-evil = n => n < 0 ? false : (n.toString(2).match(/1/g) || []).length % 2 == 0;
+var evil = n => n < 0 ? false : (n.toString(2).match(/1/g) || []).length % 2 == 0;
 
-poweroftwo = n => n.toString(2).split("").filter(x => x == 1).length == 1 && true;
+var poweroftwo = n => n.toString(2).split("").filter(x => x == 1).length == 1 && true;
 
-ds = (n, e = 1) => Array.from(Math.abs(n).toString()).map(element => parseInt(element)).reduce((p, c) => p + c**e, 0);
+var ds = (n, e = 1) => Array.from(Math.abs(n).toString()).map(element => parseInt(element)).reduce((p, c) => p + c**e, 0);
 
-gcd = (a, b) => !b ? a: gcd(b, a % b);
+var gcd = (a, b) => !b ? a: gcd(b, a % b);
 
-σ = n => n < 1 ? false : [...Array(n + 1).keys()].slice(1).reduce((p, c) => p + (!(n % c) && c), 0);
+var σ = n => n < 1 ? false : [...Array(n + 1).keys()].slice(1).reduce((p, c) => p + (!(n % c) && c), 0);
 
-φ = n => n < 1 ? false : [...Array(n + 1).keys()].slice(1).reduce((p, c) => p + (gcd(n, c) == 1 && 1), 0);
+var φ = n => n < 1 ? false : [...Array(n + 1).keys()].slice(1).reduce((p, c) => p + (gcd(n, c) == 1 && 1), 0);
 
-π = n => n < 1 ? 0 : [...Array(n + 1).keys()].slice(1).reduce((p, c) => p + (prime(c) && 1), 0);
+var π = n => n < 1 ? 0 : [...Array(n + 1).keys()].slice(1).reduce((p, c) => p + (prime(c) && 1), 0);
 
-dap = n => n < 1 ? false : σ(n) < n*2 ? "deficient" : σ(n) > n*2 ? "abundant" : "perfect";
+var dap = n => n < 1 ? false : σ(n) < n*2 ? "deficient" : σ(n) > n*2 ? "abundant" : "perfect";
 
-prevprime = n => n < 3 ? false : Array(n / 2).fill(n).map((x, y) => x - y).find(prime);
+var prevprime = n => n < 3 ? false : Array(n / 2).fill(n).map((x, y) => x - y).find(prime);
 
-nextprime = n => n < 3 ? 2 : Array(2n).fill(n).map((x, y) => x + y).find(prime);
+var nextprime = n => n < 3 ? 2 : Array(2n).fill(n).map((x, y) => x + y).find(prime);
 
-palindromic = n => n < 0 ? false : n.toString() == n.toString().split("").reverse().join("");
+var palindromic = n => n < 0 ? false : n.toString() == n.toString().split("").reverse().join("");
 
-powerful = n => n < 1 ? false : Array(Math.floor(Math.sqrt(n))).fill(1).map((x, y) => x + y).some(i => Number.isInteger(Math.cbrt(n / i**2)));
+var powerful = n => n < 1 ? false : Array(Math.floor(Math.sqrt(n))).fill(1).map((x, y) => x + y).some(i => Number.isInteger(Math.cbrt(n / i**2)));
 
-So2s = n => {
+var So2s = n => {
     if (square(n) || square(n + 1)) {return true};
     for (let i = 2; i^2 > n; i++) {
         for (var count = 0; n % i != 0; count++) {n = Math.floor(n / i)};
@@ -51,7 +51,7 @@ So2s = n => {
     return n % 4 != 3;
 }
 
-happy = n => {
+var happy = n => {
     let slow = n;
     let fast = n;
 
@@ -62,12 +62,12 @@ happy = n => {
     }
 }
 
-digiroot = n => {
+var digiroot = n => {
     for (var f = ds(n); f > 9; f = ds(f));
     return f;
 }
 
-smoothies = (n, flavor) => {
+var smoothies = (n, flavor) => {
     switch(flavor) {
         case 5:
             var kstartval = 7;
@@ -86,7 +86,7 @@ smoothies = (n, flavor) => {
     return true;
 }
 
-b100 = n => {
+var b100 = n => {
     const table = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'Γ', 'Δ', 'Θ', 'Λ', 'Ξ', 'Π', 'Σ', 'Φ', 'Ψ', 'Ω', 'α', 'β', 'γ', 'δ', 'ε', 'ζ', 'η', 'θ', 'ι', 'κ', 'λ', 'μ', 'ν', 'ξ', 'π', 'ρ', 'σ', 'ς', 'τ', 'υ', 'φ', 'χ', 'ψ', 'ω', 'þ', 'ð', 'ɔ', 'ə'];
     n = n.toString()
 
@@ -114,7 +114,7 @@ b100 = n => {
     return f ? f + final : final;
 }
 
-b1000 = n => {
+var b1000 = n => {
     $.getJSON("base1000.json", function(table) {   
         var m = n.toString();
         
@@ -144,7 +144,7 @@ b1000 = n => {
     });
 }
 
-b2048 = n => {
+var b2048 = n => {
     $.getJSON("base2048.json", function(table) {   
         if (n < 2048) return table[n];
         
