@@ -8,17 +8,22 @@
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="/mathcode/functions.js" type="module"></script>
+    <script src="/mathcode/numana.js"></script>
     <style>
         * {color: black;}
     </style>
   </head>
   <body>
     <header>
-      <a href="/" class="home"><h2>Home</h2></a>
+      <a href="/index.html" class="home"><h2>Home</h2></a>
     </header>
     <main>
         <h1>Welcome to the home of math related code by Adam Jabri.</h1>
         <a href="base2048.html"><h2>Base 2048</h2></a>
+        <input type="number" id="num"></input>
+        <button onclick="$('p#result').html = numana($('#num').val())"></button>
+        <p id="result"></p>
     </main>
     <footer>
       <section>
