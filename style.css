@@ -168,7 +168,7 @@ label[aria-label=Name] > * {height: 4vh;}
 
 input[placeholder=Name]:focus, textarea:focus {border-color: #402ecc;}
 
-form * {
+form *, input {
     color: black;
 }
 
