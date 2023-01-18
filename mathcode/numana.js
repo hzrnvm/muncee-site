@@ -145,7 +145,7 @@ var b1000 = n => {
 }
 
 var b2048 = n => {
-    $.getJSON("base2048.json", function(table) {   
+    $.getJSON("base2048.json", function(table) {
         if (n < 2048) return table[n];
         
         var bn = n.toString(2);
