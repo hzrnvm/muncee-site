@@ -2,6 +2,7 @@ body {
     font-family: 'Roboto Mono';
     word-break: break-word;
     margin: 0;
+    background-color: #ee75bf;
 }
 
 * {
@@ -18,7 +19,7 @@ a {
 
 body > header {
     height: 3em;
-    background-color: #2533a280;
+    background-color: black;
     padding: 0 1vw;
     z-index: 10000;
 }
@@ -90,7 +91,7 @@ button:hover {
     position: absolute;
     top: calc(202px + 3em);
     padding: 4vh 0 0;
-    background: #ff08;
+    background: #fef976;
 }
 
 #projects > header {margin-top: -4vh;}
@@ -149,7 +150,6 @@ article#more {margin-left: calc(720px + 12vw); cursor: default;}
 #contact {
     position: absolute;
     top: calc(402px + 4vh + 3em);
-    background: #f088;
 }
 
 #contact article {
