@@ -91,7 +91,7 @@ button:hover {
     position: absolute;
     /*top: calc(202px + 3em);*/
     top: 202px;
-    padding: 8vh 0 0;
+    padding: 4vh 0 0;
     background: #fef976;
 }
 
@@ -151,7 +151,7 @@ article#more {margin-left: calc(720px + 12vw); cursor: default;}
 #contact {
     position: absolute;
     /*top: calc(402px + 4vh + 3em);*/
-    top: calc(402px + 8vh);
+    top: calc(402px + 4vh);
 }
 
 #contact article {
