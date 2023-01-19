@@ -43,7 +43,9 @@ nav {
     float: right;
 }
 
-nav a {margin: 0 1vw;}
+nav a {
+    margin: 0 1vw;
+}
 
 main > section {width: 100%;}
 
