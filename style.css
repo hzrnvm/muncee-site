@@ -50,6 +50,7 @@ main > section {width: 100%;}
 #about {
     position: absolute;
     background: #007fff;
+    height: 30vh;
 }
 
 figure {
@@ -87,15 +88,15 @@ button:hover {
 #caption button {padding: 0.3em 0.9em;}
 
 #projects {
-    height: 200px;
+    height: 30vh;
     position: absolute;
     /*top: calc(202px + 3em);*/
-    top: 202px;
-    padding: 4vh 0 0;
+    top: 30vh;
+    padding: 8vh 0 0;
     background: #fef976;
 }
 
-#projects > header {margin-top: -4vh;}
+#projects > header {margin-top: -8vh;}
 
 #projects > #thumbs {
     width: calc(960px + 12vw);
@@ -104,9 +105,9 @@ button:hover {
 
 #projects article {
     width: 240px;
-    height: 180px;
+    height: 24vh;
     position: absolute;
-    top: 4vh;
+    top: 6vh;
     background-color: #eee;
     border: 1px solid grey;
     border-radius: 4px;
@@ -151,7 +152,7 @@ article#more {margin-left: calc(720px + 12vw); cursor: default;}
 #contact {
     position: absolute;
     /*top: calc(402px + 4vh + 3em);*/
-    top: calc(402px + 4vh);
+    top: 64vh;
 }
 
 #contact article {
