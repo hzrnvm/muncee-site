@@ -92,11 +92,11 @@ button:hover {
     position: absolute;
     /*top: calc(202px + 3em);*/
     top: 30vh;
-    padding: 8vh 0 0;
+    padding: 4vh 0 0;
     background: #fef976;
 }
 
-#projects > header {margin-top: -8vh;}
+#projects > header {margin-top: -4vh;}
 
 #projects > #thumbs {
     width: calc(960px + 12vw);
