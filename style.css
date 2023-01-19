@@ -49,13 +49,14 @@ main > section {width: 100%;}
 
 #about {
     position: absolute;
-    background: #007fff;
+    background: radial-gradient(ellipse at -5% -5%, #007fff -5%, white);
     height: 30vh;
 }
 
 figure {
     margin: 0;
     line-height: 0;
+    padding: calc((30vh - 202px) / 2);
 }
 
 #caption {
@@ -93,7 +94,7 @@ button:hover {
     /*top: calc(202px + 3em);*/
     top: 30vh;
     padding: 4vh 0 0;
-    background: #fef976;
+    background: radial-gradient(ellipse at -5% -5%, #0f0 0, #7f7 5%, white);
 }
 
 #projects > header {margin-top: -4vh;}
@@ -153,6 +154,7 @@ article#more {margin-left: calc(720px + 12vw); cursor: default;}
     position: absolute;
     /*top: calc(402px + 4vh + 3em);*/
     top: 64vh;
+    background: radial-gradient(ellipse at 0% -86%, #ff0, transparent 70%);
 }
 
 #contact article {
