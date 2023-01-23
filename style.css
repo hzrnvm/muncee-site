@@ -51,7 +51,7 @@ main > section {width: 100%;}
 
 #about {
     position: absolute;
-    background: radial-gradient(ellipse at -5% -5%, #007fff -5%, white);
+    background: radial-gradient(ellipse at -5% -5%, #007fff -5%, #bbe)
     height: 30vh;
 }
 
